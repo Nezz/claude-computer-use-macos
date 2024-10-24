@@ -25,7 +25,7 @@ async def main():
     if len(sys.argv) > 1:
         instruction = " ".join(sys.argv[1:])
     else:
-        instruction = "Save an image of a cat to the desktop."
+        instruction = input("Please enter your instruction: ")
 
     print(
         f"Starting Claude 'Computer Use'.\nPress ctrl+c to stop.\nInstructions provided: '{instruction}'"
